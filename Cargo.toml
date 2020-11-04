@@ -1,0 +1,33 @@
+[package]
+name = "hifive1-revb-exec"
+version = "0.0.0"
+authors = ["Ashley Mannix"]
+publish = false
+license = "MIT"
+edition = "2018"
+
+[[bin]]
+name = "hifive1-revb-exec"
+path = "main.rs"
+test = false
+bench = false
+
+[profile.release]
+codegen-units = 1
+debug = true
+lto = true
+
+[dependencies.embedded-hal]
+version = "0.2.3"
+
+[dependencies.hifive1]
+version = "0.8.0"
+features = [
+    "board-hifive1-revb"
+]
+
+[dependencies.riscv]
+version = "0.5.3"
+
+[dependencies.riscv-rt]
+version = "0.6.0"
