@@ -1,3 +1,7 @@
+# Deprecation Notice
+
+I've ended up turning this into a template to use with `cargo generate`. You can find it [here](https://github.com/KodrAus/hifive1-revb-template)!
+
 # Running Rust on a HiFive1 Rev B
 
 This is a little toy repo for running some [Rust](https://rust-lang.org) code on a [RISC-V](https://riscv.org/)-based [HiFive1 Rev B](https://www.sifive.com/boards/hifive1-rev-b) board, originally adapted from [here](https://github.com/riscv-rust/riscv-rust-quickstart).
